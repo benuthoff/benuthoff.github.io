@@ -1,0 +1,75 @@
+body {
+	
+	background-color: #fff;
+	width: 100vw; height: 100vh;
+	margin: 0; overflow: hidden;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	font-family: 'Oxygen';
+	user-select: none;
+
+	background-image: radial-gradient(#000 0.5px, #ffffff 0.5px);
+	background-size: 10px 10px;
+
+}
+
+#main {
+	display: grid;
+	margin: 40px; padding: 40px;
+	border: solid 2.6px #222;
+	color: #222;
+	grid-template: auto / max-content auto;
+	column-gap: 40px;
+}
+#main > * {
+	outline: solid 2.6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	margin: 0;
+	font-size: 64px;
+	font-weight: bold;
+	padding: 40px;
+	display: flex;
+	align-items: center;
+}
+
+#tabs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#tabs > div {
+	width: 350px;
+	font-size: 48px;
+	text-align: center;
+	border-bottom: solid 2.6px #222;
+	padding: 20px 0;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+#tabs > div:hover {
+	background-color: #222;
+	border-bottom-color: transparent;
+	color: #fff;
+}
+#tabs > div:active {
+	background-color: #222;
+	border-bottom-color: transparent;
+	color: #fff;
+	transform: scale(0.98);
+}
+
+
+@font-face {
+	font-family: 'Oxygen';
+	src: url(./fonts/Oxygen-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Oxygen';
+	src: url(./fonts/Oxygen-Bold.ttf);
+	font-weight: bold;
+}
